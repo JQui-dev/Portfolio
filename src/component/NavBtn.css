@@ -1,0 +1,40 @@
+.NavBtn {
+    min-width: 10rem;
+
+    margin: 5px;
+    padding: 10px;
+    
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    
+    border: 1px solid transparent;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    
+    background: #000;
+    color: #fff;
+}
+.NavBtn:hover,
+.NavBtn:focus {
+    animation: btnAnime 700ms infinite;
+}
+@keyframes btnAnime {
+    25% {
+        border: 1px solid transparent;
+        border-left: 1px solid #fff;
+    }
+    50% {
+        border: 1px solid transparent;
+        border-top: 1px solid #fff;
+    }
+    75% {
+        border: 1px solid transparent;
+        border-right: 1px solid #fff;
+    }
+    100% {
+        border: 1px solid transparent;
+        border-bottom: 1px solid #fff;
+    }
+}

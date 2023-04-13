@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Japan Guide",
+        "desc": "A complete guide to travel in Tokyo",
+        "finished": false,
+        "link": "https://j-qtokyo.netlify.app/",
+        "imgUrl": "https://i.ibb.co/m43ZpFN/tokyo.png"
+    },
+    {
+        "id": 2,
+        "name": "F1 Project",
+        "desc": "F1 Preaseason project",
+        "finished": false,
+        "link": "https://q1-f1-project.netlify.app",
+        "imgUrl": "https://i.ibb.co/myxdXBH/f1.png"
+    },
+    {
+        "id": 3,
+        "name": "Calculator",
+        "desc": "Basic math operations",
+        "finished": true,
+        "link": "https://j-qcalculator.netlify.app/",
+        "imgUrl": "https://i.ibb.co/fdR8nr3/Captura-de-pantalla-24.png"
+    }
+]

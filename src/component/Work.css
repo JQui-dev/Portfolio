@@ -1,0 +1,32 @@
+.Work {
+    width: 100%;
+
+    background: #000;
+    color: #fff;
+
+    overflow-x: hidden;
+}
+.Work > .title {
+    width: 50%;
+
+    font-family: 'Poiret One', cursive;
+    font-size: 4rem;
+    text-align: center;
+
+    border-bottom-right-radius: 100px;
+
+    background: #fff;
+    color: #000;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .Work > .title {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+.App {
+    font-family: 'Poiret One', cursive;
+    background: linear-gradient(to right, #fff 50%, #000 50%);
+    position: relative;
+}
