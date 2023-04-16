@@ -4,7 +4,7 @@
         "name": "Tokyo Guide",
         "desc": "A complete guide to travel in Tokyo",
         "status": false,
-        "link": "https://j-qtokyo.netlify.app",
+        "link": "https://jq-tokyo.netlify.app/",
         "ghLink": "https://github.com/JQui-dev/Tokyo",
         "imgUrl": "https://i.ibb.co/m43ZpFN/tokyo.png"
     },
@@ -14,7 +14,7 @@
         "desc": "API-Rest manipulation",
         "status": false,
         "link": "https://jq-rick-morty.netlify.app",
-        "ghLink": "https://jq-rick-morty.netlify.app",
+        "ghLink": "https://github.com/JQui-dev/Rick-Morty",
         "imgUrl": "https://i.ibb.co/ByLMRPp/ram.png"
     },
     {
@@ -23,7 +23,7 @@
         "desc": "Basic math operations",
         "status": true,
         "link": "https://j-qcalculator.netlify.app",
-        "ghLink": "https://github.com/JQui-dev/Rick-Morty",
+        "ghLink": "",
         "imgUrl": "https://i.ibb.co/fdR8nr3/Captura-de-pantalla-24.png"
     }
 ]
