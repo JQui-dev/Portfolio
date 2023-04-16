@@ -1,6 +1,6 @@
-import "./Work.css";
+import "./Work.scss";
 
-import WCard from "./WCard";
+import WCard from "./sub/WCard";
 
 function Work() {
   return (

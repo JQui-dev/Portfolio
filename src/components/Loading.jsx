@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import "./Loading.css"
+import "./Loading.scss"
 
 function Loading() {
     let [hide, setHide] = useState(true)

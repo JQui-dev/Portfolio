@@ -1,8 +1,10 @@
+@use "./style.scss";
+
 .Work {
     width: 100%;
 
-    background: #000;
-    color: #fff;
+    background: var(--c_2);
+    color: var(--c_1);
 
     overflow-x: hidden;
 }
@@ -15,8 +17,8 @@
 
     border-bottom-right-radius: 100px;
 
-    background: #fff;
-    color: #000;
+    background: var(--c_1);
+    color: var(--c_2);
 }
 
 

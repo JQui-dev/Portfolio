@@ -1,3 +1,4 @@
+@use "./style.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 .NavBar {
@@ -10,7 +11,7 @@
 
     font-family: 'Poiret One', cursive;
 
-    background: #000;
+    background: var(--c_2);
 }
 .noBar {
     position: fixed;
@@ -23,9 +24,7 @@
 
 .NavBar > .nIcon,
 .noBar > .nIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include style.f-center;
     
     position: absolute;
 
@@ -41,11 +40,10 @@
 
     border-bottom-right-radius: 25px;
 
-    background: #fff;
+    background: var(--c_1);
 }
 .nIcon > .home {
-    scale: 2;
-    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(49deg) brightness(97%) contrast(101%);
+    scale: 3;
 }
 
 
@@ -53,10 +51,8 @@
 
 
 .showNav {
-    display: flex;
+    @include style.f-center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     height: 100%;
 }

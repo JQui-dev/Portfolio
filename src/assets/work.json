@@ -1,26 +1,29 @@
 [
     {
         "id": 1,
-        "name": "Japan Guide",
+        "name": "Tokyo Guide",
         "desc": "A complete guide to travel in Tokyo",
-        "finished": false,
-        "link": "https://j-qtokyo.netlify.app/",
+        "status": false,
+        "link": "https://j-qtokyo.netlify.app",
+        "ghLink": "https://github.com/JQui-dev/Tokyo",
         "imgUrl": "https://i.ibb.co/m43ZpFN/tokyo.png"
     },
     {
         "id": 2,
-        "name": "F1 Project",
-        "desc": "F1 Preaseason project",
-        "finished": false,
-        "link": "https://q1-f1-project.netlify.app",
-        "imgUrl": "https://i.ibb.co/myxdXBH/f1.png"
+        "name": "Rick & Morty",
+        "desc": "API-Rest manipulation",
+        "status": false,
+        "link": "https://jq-rick-morty.netlify.app",
+        "ghLink": "https://jq-rick-morty.netlify.app",
+        "imgUrl": "https://i.ibb.co/ByLMRPp/ram.png"
     },
     {
         "id": 3,
         "name": "Calculator",
         "desc": "Basic math operations",
-        "finished": true,
-        "link": "https://j-qcalculator.netlify.app/",
+        "status": true,
+        "link": "https://j-qcalculator.netlify.app",
+        "ghLink": "https://github.com/JQui-dev/Rick-Morty",
         "imgUrl": "https://i.ibb.co/fdR8nr3/Captura-de-pantalla-24.png"
     }
 ]

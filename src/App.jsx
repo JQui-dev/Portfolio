@@ -1,9 +1,9 @@
-import './App.css'
+import './App.scss'
 
-import Loading from './component/Loading'
-import NavBar from './component/NavBar'
-import LandPage from './component/LandPage'
-import Work from './component/Work'
+import Loading from './components/Loading'
+import NavBar from './components/NavBar'
+import LandPage from './components/LandPage'
+import Work from './components/Work'
 
 function App() {
   return (

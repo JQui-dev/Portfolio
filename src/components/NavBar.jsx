@@ -1,9 +1,9 @@
 import { GrHome } from "react-icons/gr";
 import { useState } from 'react'
 
-import './NavBar.css'
+import './NavBar.scss'
 
-import NavBtn from './NavBtn'
+import NavBtn from './sub/NavBtn'
 
 
 function NavBar() {

@@ -1,16 +1,16 @@
+@use "./style.scss";
+
 .Loading {
     position: fixed;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include style.f-center;
 
     width: 100%;
     height: 100vh;
 
     z-index: 100;
 
-    background: #000;
+    background: var(--c_2);
 }
 .noLoading {
     display: none;
@@ -20,9 +20,6 @@
     display: flex;
 }
 .circle {
-    --size: 2rem;
-    --time: .8s;
-
     width: var(--size);
     aspect-ratio: 1;
 
@@ -32,7 +29,7 @@
 
     animation: rise var(--time) infinite;
 
-    background: #fff;
+    background: var(--c_1);
 }
 .circle:nth-child(1) {animation-delay: calc(var(--time)/2);}
 .circle:nth-child(2) {animation-delay: calc(var(--time)/4);}

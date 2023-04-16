@@ -1,14 +1,12 @@
-import "./WCard.css";
+import "./WCard.scss";
 
-import works from "./../assets/work.json";
+import works from "../../assets/work.json";
+
+import { FaGithub } from "react-icons/fa";
 
 function WCard() {
   return (
     <div className="WCardGroup">
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-      </style>
       {works.map((work) => (
         <a className="WCard" key={work.id} href={work.link}>
           <div className="overf">
@@ -17,6 +15,10 @@ function WCard() {
           <div className="info">
             <h2>{work.name}</h2>
             <p>{work.desc}</p>
+
+            <a href={work.ghLink}>
+              <FaGithub className={work.status ? "gh finish" : "gh unfinish"} size={45}/>
+            </a>
           </div>
         </a>
       ))}

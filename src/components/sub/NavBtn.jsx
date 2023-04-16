@@ -1,4 +1,4 @@
-import "./NavBtn.css"
+import "./NavBtn.scss"
 
 function NavBtn({url, name="Name?"}) {
     return (

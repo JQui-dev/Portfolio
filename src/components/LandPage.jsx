@@ -1,4 +1,4 @@
-import "./LandPage.css"
+import "./LandPage.scss"
 
 // ICONS
 import { FaInstagram, FaGithub, FaReact, FaNodeJs, FaHtml5 } from "react-icons/fa";
