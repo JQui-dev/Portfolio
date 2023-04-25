@@ -1,0 +1,11 @@
+@use "./../style.scss";
+
+.TecIcon {
+    flex: 1;
+    @include style.f-center;
+    flex-direction: row;
+    
+    padding: 1rem;
+    
+    overflow: hidden;
+}

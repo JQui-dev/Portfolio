@@ -8,7 +8,7 @@ function WCard() {
   return (
     <div className="WCardGroup">
       {works.map((work) => (
-        <a className="WCard" key={work.id} href={work.link}>
+        <a target="_blank" className="WCard" key={work.id} href={work.link}>
           <div className="overf">
             <img src={work.imgUrl} alt={`${work.name} image`} />
           </div>
@@ -16,7 +16,7 @@ function WCard() {
             <h2>{work.name}</h2>
             <p>{work.desc}</p>
 
-            <a href={work.ghLink}>
+            <a target="_blank" href={work.ghLink}>
               <FaGithub className={work.status ? "gh finish" : "gh unfinish"} size={45}/>
             </a>
           </div>

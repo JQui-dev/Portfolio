@@ -9,9 +9,7 @@ function App() {
   return (
     <div className="App">
       <Loading/>
-
       <NavBar/>
-      
       <LandPage/>
       <Work/>
     </div>
