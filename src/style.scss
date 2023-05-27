@@ -1,0 +1,15 @@
+:root {
+    --c1: #ff6a00;
+
+    --ca: #fff;
+    --cb: #000;
+
+    --gap: 10px;
+    --time: 1s;
+}
+
+@mixin f-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

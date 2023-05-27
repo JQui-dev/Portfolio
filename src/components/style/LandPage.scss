@@ -1,0 +1,117 @@
+@use "./../../style.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+.LandPage {
+    display: flex;
+    font-family: 'Poiret One', cursive;
+
+    .left, .right {
+        flex: 1;
+
+        padding: var(--gap);
+
+        height: 100dvh;
+        width: 50%;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--ca);
+
+        .name {
+            font-size: 4em;
+
+            .top, .bottom {
+                line-height: 1.2em;
+            }
+
+            .top {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+
+                gap: var(--gap);
+
+                .icons {
+                    display: flex;
+                    gap: 2.5px;
+
+                    font-size: .7em;
+                    
+                    & * {
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: space-around; 
+
+                        color: var(--c1);
+                    }
+                }   
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--cb);
+
+        .icons {
+            display: flex;
+            gap: var(--gap);
+
+            font-size: 5em;
+            
+            color: var(--ca);
+        }
+    }
+
+
+
+    .down {
+        position: absolute;
+
+        font-size: 2.5em;
+
+        animation: down 1s ease-in-out infinite;
+
+        filter: drop-shadow(0 5px 5px var(--c1))
+                drop-shadow(0 -5px 5px var(--c1));
+
+        color: var(--c1);
+    }
+
+    @keyframes down {
+        from, to {
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%) translateY(0);
+          }
+          50% {
+            // If you dont specify X it'll move to the right
+            transform: translateX(-50%) translateY(-10px); 
+          }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .LandPage {
+        flex-direction: column;
+    
+        .left, .right {
+            min-height: 50dvh;
+            width: 100%;
+        }
+
+        .left {
+            .name {
+                font-size: 3em;
+            }
+        }
+    }
+}

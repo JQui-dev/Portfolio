@@ -1,0 +1,30 @@
+[
+    {
+        "me": {
+            "name": "Joseph",
+            "igUrl": "https://www.instagram.com/jquiroz___/",
+            "ghUrl": "https://github.com/JQui-dev",
+            "mail": "jqui.contact@gmail.com"
+        },
+        "work": [
+            {
+                "id": 1,
+                "name": "Rick & Morty",
+                "desc": "API-Rest manipulation",
+                "status": false,
+                "link": "https://jq-rm.netlify.app/",
+                "ghLink": "https://github.com/JQui-dev/Rick-Morty",
+                "imgUrl": "https://i.ibb.co/wsFFq3K/rm.png"
+            },
+            {
+                "id": 2,
+                "name": "Test",
+                "desc": "aaaaaaaa",
+                "status": true,
+                "link": "https://jq-rm.netlify.app/",
+                "ghLink": "https://github.com/JQui-dev/Rick-Morty",
+                "imgUrl": "https://i.ibb.co/wsFFq3K/rm.png"
+            }
+        ]
+    }
+]

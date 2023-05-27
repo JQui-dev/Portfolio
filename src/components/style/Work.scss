@@ -1,0 +1,79 @@
+@use "./../../style.scss";
+
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.Work {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-family: 'League Spartan', sans-serif;
+
+    padding: calc(var(--gap)/2);
+    gap: calc(var(--gap)/2);
+
+    background: var(--ca);
+
+    .card {
+        display: flex;
+        flex-direction: column;
+
+        width: calc(50% - 2.5px);
+
+        padding: var(--gap);
+        gap: var(--gap);
+
+        overflow: hidden;
+
+        border-radius: var(--gap);
+        background: var(--cb);
+
+        & img { 
+            flex:1;
+            width: 100%;
+            aspect-ratio: 2; 
+
+            border-radius: calc(var(--gap)/2);
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .name {
+                & h2 {
+                    font-size: 2.2em;
+                    color: var(--c1);
+                }
+                & p {
+                    font-size: 1.3em;
+                    font-weight: 100;
+                    color: var(--ca);
+                }
+            }
+            .bottom {
+                font-size: 2.5em;
+                color: var(--c1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Work {
+        .card {
+            width: 100%;
+            .info {
+                .name {
+                    & h2 {
+                        font-size: 2.1em;
+                    }
+                    & p {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
