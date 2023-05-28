@@ -1,0 +1,41 @@
+@use "./../../style.scss";
+
+.Error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100dvh;
+    
+    gap: var(--gap);
+
+    font-size: 2em;
+
+    & h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        
+        padding: var(--gap);
+
+
+        background: var(--c1);
+        color: var(--ca);
+    }
+
+    & a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: var(--gap);
+
+        border-radius: var(--gap);
+
+        background: var(--cb);
+        color: var(--ca);
+    }
+}

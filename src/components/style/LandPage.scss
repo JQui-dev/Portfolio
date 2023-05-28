@@ -59,6 +59,8 @@
         align-items: center;
         justify-content: center;
 
+        border-radius: 0 0 0 150px;
+
         background: var(--cb);
 
         .icons {
@@ -112,6 +114,9 @@
             .name {
                 font-size: 3em;
             }
+        }
+        .right {
+            border-radius: 0;
         }
     }
 }

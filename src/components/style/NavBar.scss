@@ -1,0 +1,103 @@
+@use "./../../style.scss";
+
+.Lines, .NavBar {
+    position: fixed;
+    right: 0;
+    z-index: 999;
+
+    font-size: 1.6em;
+}
+
+.Lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: var(--gap);
+
+    border-bottom-left-radius: var(--gap);
+    
+    background: var(--ca);
+}
+
+.NavBar {
+    display: flex;
+    justify-content: end;
+
+    min-width: 25%;
+    min-height: 100%;
+
+    padding: var(--gap) 0;
+
+    box-shadow: -5px -5px 10px var(--c1);
+    
+    overflow: hidden;
+
+    background: #fff;
+
+    .info {
+        flex: 1;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        
+        padding-right: var(--gap);
+        gap: calc(var(--gap)*2);
+        
+        .icons {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            
+            width: 100%;
+
+            gap: var(--gap);
+
+            & a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--cb);
+            }
+        }
+        
+        .links {
+            flex: 1;
+            
+            display: flex;
+            flex-direction: column;
+            
+            width: 100%;
+            
+            gap: var(--gap);
+            
+            line-height: 1.8em;
+            text-align: end;
+
+            & a {
+                padding: var(--gap) 0;
+                padding-right: calc(var(--gap)*2);
+
+                border-top-right-radius: 150px;
+                border-bottom-right-radius: 150px;
+
+                transition: var(--time) ease-in-out;
+
+                background: var(--cb);
+                color: var(--ca);
+            }
+            & a:hover, a:active {
+                box-shadow: inset 100vw 0 0 0 var(--c1);
+                color: var(--cb);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .NavBar {
+        box-shadow: 0px 0px 0px var(--c1);
+        width: 100%;
+    }
+}

@@ -1,14 +1,12 @@
 import "./style/LandPage.scss"
 
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
 import { FaGithub, FaInstagram, FaBookmark } from "react-icons/fa"
-
 import { FaReact, FaSass, FaJsSquare } from "react-icons/fa";
-
 import { FaChevronDown } from "react-icons/fa";
 
-import { useState, useEffect } from "react"
 
 function LandPage() {
 
@@ -31,7 +29,6 @@ function LandPage() {
     return (
         <div className="LandPage">
             <div className="left">
-
                 <div className="name">
                     <div className="top">
                         <h2>I'm</h2>
@@ -54,8 +51,6 @@ function LandPage() {
                     <FaReact/>
                     <FaSass/>
                     <FaJsSquare/>
-                    {/* <FaHtml5/>
-                    <FaCss3/> */}
                 </div>
             </div>
 

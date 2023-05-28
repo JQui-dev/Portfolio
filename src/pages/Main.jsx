@@ -5,7 +5,7 @@ import Work from "../components/Work"
 
 function Main() {
   return (
-    <div>
+    <div className="Main">
         <LandPage/>
         <Work/>
     </div>
