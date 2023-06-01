@@ -1,0 +1,126 @@
+@use "./../../style.scss";
+
+.ConForm {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+
+    & form {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        
+        padding: var(--gap);
+        gap: var(--gap);
+
+        .info {
+            display: flex;
+            flex-direction: column;
+
+            gap: var(--gap);
+
+            .side {
+                display: flex;
+                gap: var(--gap);
+            }
+
+            & input, & textarea {
+                all: unset;
+
+                flex: 1;
+
+                text-align: left;
+                font-weight: 800;
+
+                padding: var(--gap);
+                
+                border-radius: var(--gap);
+                border-bottom: .5px solid var(--cb);
+                border-right: 3px solid var(--cb);
+
+                color: var(--cb);
+            }
+            & ::placeholder {
+                color: var(--c1);
+            }
+            & :focus {
+                background: #eee;
+            }
+            .msg { 
+                min-height: 7em; 
+                white-space: normal;
+                word-wrap: break-word;
+            }
+        }
+        .send {
+            padding: calc(var(--gap)*2);
+            
+            text-align: center;
+            
+            border: none;
+            border-radius: var(--gap);
+            
+            color: var(--cb);
+            background: var(--c1);
+        }   
+    }
+
+    .draw {
+        flex: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 70svh;
+        
+        border-top-right-radius: var(--gap);
+        border-bottom-right-radius: var(--gap);
+
+        background: var(--cb);
+        color: var(--cb);
+
+        & img {
+            height: 100%;
+
+            padding: var(--gap);
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .ConForm {
+        display: flex;
+        flex-direction: column-reverse;
+
+        width: 100%;
+        min-height: auto;
+    
+        & form {
+            width: 100%;
+            .info {
+                .side {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .draw {
+            width: 100%;
+            
+            padding: var(--gap);
+            border-top-right-radius: 0;
+            border-bottom-left-radius: var(--gap);
+            border-bottom-right-radius: var(--gap);
+
+            & img {
+                height: 40svh;
+    
+                padding: var(--gap);
+            }
+        }
+    }
+}

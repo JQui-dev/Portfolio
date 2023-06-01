@@ -1,5 +1,4 @@
 @use "./../../style.scss";
-
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 .LandPage {
@@ -11,7 +10,7 @@
 
         padding: var(--gap);
 
-        height: 100dvh;
+        height: 100svh;
         width: 50%;
     }
 
@@ -101,12 +100,14 @@
     }
 }
 
+
+// MOBILE
 @media screen and (max-width: 700px) {
     .LandPage {
         flex-direction: column;
     
         .left, .right {
-            min-height: 50dvh;
+            min-height: 50svh;
             width: 100%;
         }
 

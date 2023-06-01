@@ -18,7 +18,7 @@ function Work() {
     }
 
   return (
-    <div className="Work" id="Work">
+    <div className="Work">
         {
             work.map(({id, name, desc, link, imgUrl, ghLink})=>(
                 <Link to={link} className="card" key={id} target="_BLANK">

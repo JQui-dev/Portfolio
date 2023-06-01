@@ -1,0 +1,15 @@
+@use "./../../style.scss";
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0;
+
+    .title {
+        padding: var(--gap);
+
+        background: var(--cb);
+        color: var(--ca);
+    }
+}

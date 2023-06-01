@@ -1,8 +1,15 @@
 import "./style/Contact.scss"
 
+import ConForm from "../components/ConForm"
+
 function Contact() {
   return (
-    <div>Contact</div>
+    <div className="Contact">
+      <div className="title">
+        <h1>Get in Touch!</h1>
+      </div>
+      <ConForm/>
+    </div>
   )
 }
 
