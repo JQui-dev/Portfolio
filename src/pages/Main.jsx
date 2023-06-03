@@ -2,14 +2,14 @@ import "./style/Main.scss"
 
 import LandPage from "../components/LandPage"
 import Work from "../components/Work"
-import ConForm from "../components/ConForm"
+import CForm from "../components/CForm"
 
 function Main() {
   return (
     <div className="Main">
         <LandPage/>
         <Work/>
-        <ConForm/>
+        <CForm/>
     </div>
   )
 }

@@ -1,0 +1,58 @@
+@use "./../../style.scss";
+
+.CForm {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+
+    padding: var(--gap);
+    gap: calc(var(--gap)*2);
+    
+    background: var(--cb);
+    color: var(--ca);
+
+    & input:not([type="radio"]), & textarea {
+        all: unset;
+
+        min-height: 2em;
+
+        padding: calc(var(--gap)/2);
+
+        font-weight: 800;
+
+        border-radius: calc(var(--gap)/2);
+
+        background: var(--ca);
+        color: var(--cb);
+    }
+
+    .middle {
+        display: flex;
+        gap: var(--gap);
+
+        .name, .email, .employment, .budget {
+            display: flex;
+            flex-direction: column;
+
+            gap: var(--gap);
+
+            width: 100%;
+        }
+
+        .employment {
+            display: flex;
+            justify-content: center;
+            .select {
+                display: flex;
+                gap: calc(var(--gap)*2);
+
+                & label {
+                    display: flex;
+                    gap: calc(var(--gap)/2);
+                }
+            }
+        }
+    }
+
+}

@@ -1,6 +1,6 @@
 import "./style/Contact.scss"
 
-import ConForm from "../components/ConForm"
+import CForm from "../components/CForm"
 
 function Contact() {
   return (
@@ -8,7 +8,7 @@ function Contact() {
       <div className="title">
         <h1>Get in Touch!</h1>
       </div>
-      <ConForm/>
+      <CForm/>
     </div>
   )
 }
