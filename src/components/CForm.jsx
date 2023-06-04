@@ -14,6 +14,8 @@ function CForm() {
 
   return (
     <form onSubmit={sendMsg} className='CForm'>
+
+      {/* NAME AND EMAIL */}
       <div className="middle">
         <div className="name">
           <label htmlFor="name">Name:</label>
@@ -26,6 +28,8 @@ function CForm() {
         </div>
       </div>
 
+
+      {/* EMPLOYMENT AND BUDGET */}
       <div className="middle">
         <div className="employment">
           <label htmlFor="for">You need a:</label>
@@ -46,8 +50,9 @@ function CForm() {
         </div>
       </div>
 
+
       <label htmlFor="message">Message:</label>
-      <textarea placeholder='make sure to be clear!' type="text" id='message' name='message' required/>
+      <textarea placeholder='Make sure to be clear, please!' type="text" id='message' name='message' required/>
 
       <input type="submit" value="Submit" />
     </form>

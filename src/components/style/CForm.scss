@@ -4,10 +4,10 @@
     display: flex;
     flex-direction: column;
 
-    width: 50%;
-
     padding: var(--gap);
     gap: calc(var(--gap)*2);
+
+    border-radius: var(--gap);
     
     background: var(--cb);
     color: var(--ca);
@@ -25,6 +25,16 @@
 
         background: var(--ca);
         color: var(--cb);
+    }
+
+    input[type="submit"] {
+        display: flex;
+        justify-content: center;
+
+        padding: var(--gap);
+
+        background: var(--c1);
+        color: var(--ca);
     }
 
     .middle {
@@ -54,5 +64,14 @@
             }
         }
     }
+}
 
+@media screen and (max-width:380px) {
+    .CForm {
+        gap: calc(var(--gap));
+    
+        .middle {
+            flex-direction: column;
+        }
+    }
 }

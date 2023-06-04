@@ -1,0 +1,25 @@
+@use "./../../style.scss";
+
+.ContactForm {
+    display: flex;
+    gap: var(--gap);
+
+    background: var(--cb);
+    
+    & img, form {
+        flex: 1;
+    }
+
+    & img {
+        width: 50%;
+        
+        margin: auto;
+        padding: var(--gap);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .ContactForm {
+        flex-direction: column;
+    }
+}
