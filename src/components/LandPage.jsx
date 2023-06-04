@@ -35,7 +35,7 @@ function LandPage() {
                         <div className="icons">
                             <Link to={me.ghUrl} target="_BLANK"><FaGithub/></Link>
                             <Link to={me.igUrl} target="_BLANK"><FaInstagram/></Link>
-                            <Link ><FaBookmark/></Link>
+                            <Link to="/contact"><FaBookmark/></Link>
                         </div>
                     </div>
                     <div className="bottom">

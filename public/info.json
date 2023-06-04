@@ -18,12 +18,12 @@
             },
             {
                 "id": 2,
-                "name": "Test",
-                "desc": "aaaaaaaa",
-                "status": true,
-                "link": "https://jq-rm.netlify.app/",
-                "ghLink": "https://github.com/JQui-dev/Rick-Morty",
-                "imgUrl": "https://i.ibb.co/wsFFq3K/rm.png"
+                "name": "F1F",
+                "desc": "Coming soon...",
+                "status": false,
+                "link": "",
+                "ghLink": "https://github.com/JQui-dev/F1F",
+                "imgUrl": ""
             }
         ]
     }

@@ -22,7 +22,7 @@ function Work() {
         {
             work.map(({id, name, desc, link, imgUrl, ghLink})=>(
                 <Link to={link} className="card" key={id} target="_BLANK">
-                    <img src={imgUrl} alt={`${name} img`}/>
+                    <img src={imgUrl!=="" ? imgUrl : "/soon.svg"} alt={`${name} img`}/>
                     <div className="info">
                         <div className="name">
                             <h2>{name}</h2>
