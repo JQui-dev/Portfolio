@@ -1,41 +1,99 @@
 @use "./../../style.scss";
 
 .Error {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
     align-items: center;
+    justify-content: center;
 
-    height: 100dvh;
-    
-    gap: var(--gap);
+    height: 100svh;
 
-    font-size: 2em;
-
-    & h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
+    & img {
+        height: 100%;
         width: 100%;
-        
-        padding: var(--gap);
 
-
-        background: var(--c1);
-        color: var(--ca);
+        padding: 5rem;
     }
-
-    & a {
+    .info {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 
-        padding: var(--gap);
+        height: 100%;
 
-        border-radius: var(--gap);
+        gap: 3rem;
 
         background: var(--cb);
-        color: var(--ca);
+
+        & header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            & h1 {
+                font-size: 12rem;
+                line-height: 11rem;
+                color: var(--c1);
+            }
+            & h2 {
+                font-size: 5rem;
+                line-height: 4rem;
+                color: var(--c1);
+            }
+        }
+
+        & h3 {
+            font-size: 1.5rem;
+            color: var(--ca);
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Error {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    
+        height: 100svh;
+        width: 100%;
+    
+        & img {
+            height: auto;
+            width: 70vw;
+
+            padding: 1rem;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            width: 100vw;
+
+            background: var(--cb);
+    
+            & header {
+                & h1 {
+                    font-size: 8rem;
+                    line-height: 7rem;
+                    color: var(--c1);
+                }
+                & h2 {
+                    font-size: 3rem;
+                    line-height: 2rem;
+                    color: var(--c1);
+                }
+            }
+    
+            & h3 {
+                font-size: .8rem;
+                color: var(--ca);
+            }
+        }
     }
 }

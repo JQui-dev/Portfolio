@@ -1,19 +1,26 @@
 import "./style/Error.scss"
 
-import { Link } from "react-router-dom"
-
-import { HiHome } from "react-icons/hi"
+import React, { useEffect } from "react"
 
 function Error() {
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      window.history.back()
+    }, [3000])
+  }, [])
+
   return (
     <div className="Error">
-      <h1>
-        Ups! Nothing here...
-      </h1>
+      <img src="/assets/svg/notFound.svg" alt="Not found vector"/>
 
-      <Link to="/">
-        <HiHome/>
-      </Link>
+      <section className="info">
+        <header>
+          <h1>404</h1>
+          <h2>Not Found</h2>
+        </header>
+        <h3>Going back soon</h3>
+      </section>
     </div>
   )
 }

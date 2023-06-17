@@ -6,7 +6,7 @@ import CForm from "./../components/CForm"
 function ContactForm() {
   return (
     <div className='ContactForm'>
-        <img src="/contact.svg" alt="contact image"/>
+        <img src="/assets/svg/contact.svg" alt="contact image"/>
         <CForm/>
     </div>
   )

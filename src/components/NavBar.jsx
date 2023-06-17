@@ -27,9 +27,8 @@ function NavBar() {
                   <GrClose/>
                 </div>
                 <div className="links">
-                    <NavLink to="whoAmI">Who Am I?</NavLink>
-                    <NavLink to="contact">Contact</NavLink>
                     <NavLink to="work">Work</NavLink>
+                    <NavLink to="contact">Contact</NavLink>
                 </div>
             </div>
         }

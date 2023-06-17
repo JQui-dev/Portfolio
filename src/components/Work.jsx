@@ -14,7 +14,7 @@ function Work() {
     const fetchInfo = async () => {
         const data = await fetch("/info.json");
         const jsonData = await data.json();
-        setWork(jsonData[0].work)
+        setWork(jsonData.work)
     }
 
   return (
@@ -22,7 +22,7 @@ function Work() {
         {
             work.map(({id, name, desc, link, imgUrl, ghLink})=>(
                 <Link to={link} className="card" key={id} target="_BLANK">
-                    <img src={imgUrl!=="" ? imgUrl : "/soon.svg"} alt={`${name} img`}/>
+                    <img src={imgUrl!=="" ? imgUrl : "/assets/svg/soon.svg"} alt={`${name} img`}/>
                     <div className="info">
                         <div className="name">
                             <h2>{name}</h2>

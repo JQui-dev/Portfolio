@@ -3,16 +3,20 @@
 .Contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
-    gap: var(--gap);
+    min-height: 100svh;
 
     background: var(--cb);
+    color: var(--ca);
 
     .title {
-        padding: var(--gap);
-
-        background: var(--cb);
-        color: var(--ca);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 1rem;
     }
 }
 

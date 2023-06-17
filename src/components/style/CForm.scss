@@ -12,7 +12,7 @@
     background: var(--cb);
     color: var(--ca);
 
-    & input:not([type="radio"]), & textarea {
+    & input, & textarea {
         all: unset;
 
         min-height: 2em;
@@ -25,6 +25,10 @@
 
         background: var(--ca);
         color: var(--cb);
+    }
+
+    & textarea {
+        min-height: 7rem;
     }
 
     input[type="submit"] {
@@ -40,38 +44,12 @@
     .middle {
         display: flex;
         gap: var(--gap);
-
-        .name, .email, .employment, .budget {
-            display: flex;
-            flex-direction: column;
-
-            gap: var(--gap);
-
-            width: 100%;
-        }
-
-        .employment {
-            display: flex;
-            justify-content: center;
-            .select {
-                display: flex;
-                gap: calc(var(--gap)*2);
-
-                & label {
-                    display: flex;
-                    gap: calc(var(--gap)/2);
-                }
-            }
-        }
     }
-}
+    .name, .email, .msg {
+        display: flex;
+        flex-direction: column;
 
-@media screen and (max-width:380px) {
-    .CForm {
-        gap: calc(var(--gap));
-    
-        .middle {
-            flex-direction: column;
-        }
+        gap: calc(var(--gap)/2);
+        width: 100%;
     }
 }

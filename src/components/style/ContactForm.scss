@@ -2,24 +2,31 @@
 
 .ContactForm {
     display: flex;
-    gap: var(--gap);
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
 
     background: var(--cb);
     
     & img, form {
         flex: 1;
+
+        width: 100%;
+        padding: 2rem 1rem;
     }
 
     & img {
         width: 50%;
-        
-        margin: auto;
-        padding: var(--gap);
     }
 }
 
 @media screen and (max-width: 800px){
     .ContactForm {
         flex-direction: column;
+
+        & img {
+            width: 100%;
+        }
     }
 }
