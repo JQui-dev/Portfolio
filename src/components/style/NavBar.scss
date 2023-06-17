@@ -5,7 +5,7 @@
     right: 0;
     z-index: 999;
 
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
 .Lines {
@@ -49,7 +49,7 @@
             display: flex;
             align-items: center;
             justify-content: end;
-            
+
             width: 100%;
 
             gap: var(--gap);
@@ -72,7 +72,8 @@
             
             gap: var(--gap);
             
-            line-height: 1.8em;
+            font-size: 2rem;
+            line-height: 2em;
             text-align: end;
 
             & a {
