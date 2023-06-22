@@ -11,7 +11,7 @@
             "name": "WLD Hub",
             "desc": "Rick & Morty API",
             "status": false,
-            "link": "https://jq-wldh.netlify.app/",
+            "link": "https://jq-wldhub.netlify.app/",
             "ghLink": "https://github.com/JQui-dev/Rick-Morty",
             "imgUrl": "/assets/img/work/wldh.png"
         },

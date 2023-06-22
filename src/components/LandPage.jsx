@@ -20,7 +20,7 @@ function LandPage() {
         try {
             const data = await fetch("/info.json");
             const jsonData = await data.json();
-            setMe(jsonData[0].me)
+            setMe(jsonData.me)
         } catch (error) {
             console.log(error)
         }
